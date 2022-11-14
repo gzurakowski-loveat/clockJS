@@ -50,7 +50,7 @@ setInterval(showTime, 1000);
 function showTime() {
     // console.log('chechking')
 
-	let time = new Date();
+	let time = new Date(new Date().toLocaleString('en-US', {timeZone:'America/Argentina/Buenos_Aires'}));;
 	let hour = time.getHours();
 	let min = time.getMinutes();
 
@@ -134,7 +134,7 @@ function flip(flipCard, newNumber) {
 // MENU
 // TIME ZONE
 function defaultTimeZone() {
-    let time = new Date();
+    let time = new Date(new Date().toLocaleString('en-US', {timeZone:'America/Argentina/Buenos_Aires'}));
     let hour = time.getHours();
     
     am_pm = "AM";
@@ -150,7 +150,7 @@ function defaultTimeZone() {
 
     document.getElementById("ampm").innerHTML = am_pm;
 }
-
+//America/Argentina/Buenos_Aires
 function time_zone(){
     var time_zone_element = document.getElementById("ampm");
     var time_zone = new Date();
