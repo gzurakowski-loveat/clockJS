@@ -154,7 +154,7 @@ function defaultTimeZone() {
 function time_zone(){
     var time_zone_element = document.getElementById("ampm");
     var time_zone = new Date();
-    time_zone_element.innerHTML = time_zone.toLocaleString('en-US', { hour: 'numeric', hour12: true }).slice(2, 5);
+    time_zone_element.innerHTML = time_zone.toLocaleString('en-US', { hour: 'numeric', hour12: true ,timeZone:'America/Argentina/Buenos_Aires'}).slice(2, 5);
 }
 
 
